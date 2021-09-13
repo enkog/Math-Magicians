@@ -1,14 +1,12 @@
 # Math-Magicians
 
-This is the first project of the Math Magicians application.It is a set up of the environment and tools needed to develop a React application.
+This is the first project of the Math Magicians application.It is a set up of the environment and tools needed to develop a React application.    
 
 # Built with
   - HTML
   - CSS
   - JavaScript
   - React
-
-## Setup
 
 ### Clone this repository
 
