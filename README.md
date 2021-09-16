@@ -1,6 +1,6 @@
 # Math-Magicians
 
-This is the first project of the Math Magicians application.It is a set up of the environment and tools needed to develop a React application.    
+In this second milestone of the Math Magicians application, I developed a React component that will hold the core functionality: a calculator.   
 
 # Built with
   - HTML
@@ -18,8 +18,8 @@ $ cd Math-Magicians
 ### Run project
 
 ```bash
-$ yarn
-$ yarn start 
+$ npm install
+$ npm start 
 ```
 
 ## Author
