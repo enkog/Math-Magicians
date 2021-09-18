@@ -10,7 +10,7 @@ const tableData = [
   ['1', '2', '3', '+'],
 ];
 
-function Calculator() {
+const Calculator = () => {
   const initialValue = { total: 0, operation: '' };
   const [obj, setObj] = useState(initialValue);
 
@@ -40,6 +40,6 @@ function Calculator() {
       </tbody>
     </table>
   );
-}
+};
 
 export default Calculator;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function CalculatorRow(props) {
+const CalculatorRow = (props) => {
   const { items, onClick } = props;
 
   return (
@@ -12,7 +12,7 @@ function CalculatorRow(props) {
       <td className="orange-colour"><input type="button" value={items[3]} onClick={onClick} /></td>
     </tr>
   );
-}
+};
 
 CalculatorRow.propTypes = {
   items: PropTypes.arrayOf.isRequired,
