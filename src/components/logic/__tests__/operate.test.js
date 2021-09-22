@@ -21,8 +21,20 @@ describe('handle operations', () => {
         expect(operate(2, 3, 'x')).toEqual('6');
     })
     
-    test('tests that 4 x 7 does not equal 12', () => {
+    test('that 4 x 7 does not equal 12', () => {
         expect(operate(4, 7, 'x')).not.toEqual('12');
+    })
+
+    test('that 10 ÷ 2 equals 5', () => {
+        expect(operate(10, 2, '÷')).toEqual('5');
+    })
+    
+    test('that 25 ÷ 5 does not equal 3', () => {
+        expect(operate(25, 5, '÷')).not.toEqual('3');
+    })
+
+    test('that 20 ÷ 0 throws an error', () => {
+        expect(operate(20, 0, '÷')).toEqual("Can't divide by 0.");
     })
 })
       
