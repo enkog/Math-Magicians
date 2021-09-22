@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   margin: 0 60px;
   background: #f5f9e9;
-  color: #373F51;
+  color: #373f51;
   font-size: 18px;
   font-weight: 400;
 }
@@ -23,9 +23,9 @@ ul {
 
 a {
   text-decoration: none;
-  color: #373F51;
+  color: #373f51;
 }
 
 a:hover {
-  color: #28965A;
+  color: #28965a;
 }
