@@ -6,11 +6,13 @@ const Quote = () => (
     <div>
       <p>
         Mathematics knows no races or geographic boundaries; for mathematics,
-        the cultural world is one country. — David Hilbert
+        the cultural world is one country.
+        <span>— David Hilbert</span>
       </p>
       <p>
         Mathematics is not about numbers, equations, computations, or algorithms:
-        it is about understanding. — William Paul Thurston
+        it is about understanding.
+        <span>— William Paul Thurston</span>
       </p>
     </div>
   </div>

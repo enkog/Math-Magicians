@@ -17,6 +17,11 @@
   padding: 25px;
 }
 
+.calculator-heading {
+  color: #D62828;
+  font-style: italic;
+}
+
 .calculator .output {
   background: #6d6a75;
   color: #fff;

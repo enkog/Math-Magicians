@@ -20,7 +20,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator-page">
-      <h2>Let&apos;s do some math!</h2>
+      <h2 className="calculator-heading">Let&apos;s do some math!</h2>
       <table className="calculator table-bordered">
         <tbody>
           <tr className="output">
