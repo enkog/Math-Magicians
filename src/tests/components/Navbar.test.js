@@ -5,19 +5,20 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from '../../components/UI/Navbar';
 
 it('should render the navbar', () => {
-    const component = render(
-      <Router>
-        <Navbar />
-      </Router>
-    );
+    const component = render(<Router><Navbar /></Router>);
     expect(component).toMatchSnapshot();
 });
 
 describe('Click events', () => {
+  test('that user to redirected to the Home page on clicking Home', () => {
+    render(<Router><Navbar /></Router>);
+    expect(screen.queryByText(/Welcome/)).toBeNull();
+    userEvent.click(screen.getByText('Home'));
+    expect(screen.queryByText(/Welcome/)).toBeInTheDocument;
+  });
+
   test('that user to redirected to the Quote page on clicking Quote', () => {
-    render(<Router>
-      <Navbar />
-    </Router>);
+    render(<Router><Navbar /></Router>);
     expect(screen.queryByText(/Mathematics is not about numbers/)).toBeNull();
     userEvent.click(screen.getByText('Quote'));
     expect(screen.queryByText(/Mathematics is not about numbers/)).toBeInTheDocument;
