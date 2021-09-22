@@ -7,7 +7,7 @@ const Navbar = () => (
     <a href="/" className="nav-brand">Math Magicians</a>
     <ul>
       <li>
-        <NavLink to="/" activeClassName="active-link" exact>Home</NavLink>
+        <NavLink to="/" data-testid="Home" activeClassName="active-link" exact>Home</NavLink>
       </li>
       <li>
         <NavLink to="/calculator" activeClassName="active-link" exact>Calculator</NavLink>
