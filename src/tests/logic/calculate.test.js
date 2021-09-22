@@ -1,4 +1,4 @@
-import calculate from '../calculate';
+import calculate from '../../components/logic/calculate';
 
 describe('handle buttons', () => {
   test('pressing AC button', () => {
