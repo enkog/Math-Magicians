@@ -5,8 +5,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from '../../components/UI/Navbar';
 
 it('should render the navbar', () => {
-    const component = render(<Router><Navbar /></Router>);
-    expect(component).toMatchSnapshot();
+  const component = render(<Router><Navbar /></Router>);
+  expect(component).toMatchSnapshot();
 });
 
 describe('Click events', () => {
@@ -14,20 +14,20 @@ describe('Click events', () => {
     render(<Router><Navbar /></Router>);
     expect(screen.queryByText(/Welcome/)).toBeNull();
     userEvent.click(screen.getByText('Home'));
-    expect(screen.queryByText(/Welcome/)).toBeInTheDocument;
+    expect(screen.queryByText(/Welcome/)).toBeInTheDocument();
   });
 
   test('that user to redirected to the Quote page on clicking Quote', () => {
     render(<Router><Navbar /></Router>);
     expect(screen.queryByText(/Mathematics is not about numbers/)).toBeNull();
     userEvent.click(screen.getByText('Quote'));
-    expect(screen.queryByText(/Mathematics is not about numbers/)).toBeInTheDocument;
+    expect(screen.queryByText(/Mathematics is not about numbers/)).toBeInTheDocument();
   });
 
   test('that user to redirected to the Calculator page on clicking Calculator', () => {
     render(<Router><Navbar /></Router>);
     expect(screen.queryByText('Lets do Some Math:')).toBeNull();
     userEvent.click(screen.getByText('Calculator'));
-    expect(screen.queryByText('Lets do Some Math:')).toBeInTheDocument;
+    expect(screen.queryByText('Lets do Some Math:')).toBeInTheDocument();
   });
 });
