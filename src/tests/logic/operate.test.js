@@ -36,4 +36,12 @@ describe('handle operations', () => {
   test('that 20 ÷ 0 throws an error', () => {
     expect(operate(20, 0, '÷')).toEqual("Can't divide by 0.");
   });
+
+  test('that 15 % 2 equals 1', () => {
+    expect(operate(15, 2, '%')).toEqual('1');
+  });
+
+  test('that 20 % 5 does not equal 3', () => {
+    expect(operate(20, 5, '%')).not.toEqual('3');
+  });
 });

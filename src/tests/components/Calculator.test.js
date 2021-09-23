@@ -4,16 +4,16 @@ import Calculator from '../../components/UI/Calculator';
 
 describe('Calculator component', () => {
   test('Calculator component renders', () => {
-    render(<Calculator />);
-    expect(screen.getByText(/Let's do some math!/)).toBeInTheDocument();
+    const component = render(<Calculator />);
+    expect(component).toMatchSnapshot();
   });
 
-  test('Calculator component renders', () => {
+  test('Calculator renders correctly', () => {
     render(<Calculator />);
     expect(screen.getByRole('table')).toBeInTheDocument();
   });
 
-  test('Calculator adding renders', () => {
+  test('Addition is carried out correctly', () => {
     const { getByText } = render(<Calculator />);
     fireEvent.click(getByText('2'));
     fireEvent.click(getByText('+'));
@@ -22,7 +22,7 @@ describe('Calculator component', () => {
     expect(screen.getAllByText('4')[0]).toBeInTheDocument();
   });
 
-  test('Calculator subtracting renders', () => {
+  test('Subtraction is carried out correctly', () => {
     const { getByText } = render(<Calculator />);
     fireEvent.click(getByText('2'));
     fireEvent.click(getByText('-'));
@@ -31,7 +31,7 @@ describe('Calculator component', () => {
     expect(screen.getAllByText('0')[0]).toBeInTheDocument();
   });
 
-  test('Calculator multiply renders', () => {
+  test('Multiplication is carried out correctly', () => {
     const { getByText } = render(<Calculator />);
     fireEvent.click(getByText('2'));
     fireEvent.click(getByText('x'));
@@ -40,7 +40,7 @@ describe('Calculator component', () => {
     expect(screen.getAllByText('6')[0]).toBeInTheDocument();
   });
 
-  test('Calculator division renders', () => {
+  test('Division is carried out correctly', () => {
     const { getByText } = render(<Calculator />);
     fireEvent.click(getByText('2'));
     fireEvent.click(getByText('÷'));

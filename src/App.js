@@ -14,7 +14,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <fragment>
+      <div>
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -31,7 +31,7 @@ class App extends React.Component {
             <Quote />
           </Route>
         </Switch>
-      </fragment>
+      </div>
     );
   }
 }
