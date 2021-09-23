@@ -47,6 +47,11 @@ npm install
 npm start
 ```
 
+### Run Test
+
+```
+npm run test
+```
 ## Author
 
 Feel free to reach out. I'm always happy to connect :slightly_smiling_face:
@@ -55,6 +60,12 @@ Feel free to reach out. I'm always happy to connect :slightly_smiling_face:
 
 - Github: [@enkog](https://github.com/enkog)
 - Linkedin: [@enkog](https://www.linkedin.com/in/enkog/)
+
+👤 **Igor Koloski**
+
+- GitHub: [@igorkol91](https://github.com/igorkol91)
+- Twitter: [@Destro49536502](https://twitter.com/Destro49536502)
+- LinkedIn: [Koloski Igor](https://www.linkedin.com/in/igor-koloski-a754aa208/)
 
 ## 🤝 Contributing
 
