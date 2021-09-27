@@ -24,9 +24,8 @@
 - React
 
 ## Live Demo
-[Netlify deploy.]()
 
-[Heroku deploy.]()
+[Heroku deploy.](https://maths--magicians--react.herokuapp.com/)
 ## Getting Started
 
 ### Prerequisites
