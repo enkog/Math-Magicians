@@ -25,7 +25,10 @@
 
 ## Live Demo
 
-[Heroku deploy.](https://maths--magicians--react.herokuapp.com/)
+[Heroku](https://maths--magicians--react.herokuapp.com/)
+
+[Netlify](https://sleepy-villani-1b1880.netlify.app/)
+
 ## Getting Started
 
 ### Prerequisites
