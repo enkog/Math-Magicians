@@ -23,6 +23,10 @@
 - JSX
 - React
 
+## Live Demo
+[Netlify deploy.]()
+
+[Heroku deploy.]()
 ## Getting Started
 
 ### Prerequisites
